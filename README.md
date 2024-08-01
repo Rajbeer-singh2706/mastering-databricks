@@ -1,1 +1,1 @@
-# mastering-databricks
+# databricks

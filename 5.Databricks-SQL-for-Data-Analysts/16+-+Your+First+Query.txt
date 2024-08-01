@@ -1,0 +1,28 @@
+/*
+Links and Resources:
+ANSI SQL: https://blog.ansi.org/sql-standard-iso-iec-9075-2023-ansi-x3-135/#gref
+Evolution of Databricks SQL Language: https://www.databricks.com/blog/2021/11/16/evolution-of-the-sql-language-at-databricks-ansi-standard-by-default-and-easier-migrations-from-data-warehouses.html
+*/
+
+-- note: please ensure you have selected the samples catalog and nyctaxi schema
+
+-- you can format the SQL query across multiple lines
+SELECT 
+tpep_pickup_datetime, tpep_dropoff_datetime, trip_distance, fare_amount, pickup_zip, dropoff_zip 
+FROM trips;
+
+-- case sensitivity does not matter when selecting columns
+select pickup_zip, tpep_pickup_datetime, TPEP_pickup_datetime from trips;
+
+-- you can select the same column multiple times, it will be suffixed with a number
+select pickup_zip, tpep_pickup_datetime, tpep_pickup_datetime from trips;
+
+-- the asterisk wildcard can be used to select all columns from the table
+select * from trips;
+
+
+export HOSTNAME='somevalue'
+
+
+
+

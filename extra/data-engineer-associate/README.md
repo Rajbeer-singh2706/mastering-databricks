@@ -1,1 +1,0 @@
-# databrics-data-engineer-associate
